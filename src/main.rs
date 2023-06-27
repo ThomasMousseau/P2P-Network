@@ -55,7 +55,7 @@ struct ListResponse {
     receiver: String,
 }
 
-
+impl NetworkBehaviourEventProcess<FloodsubEvent> for RecipeBehaviour {}
 
 #[tokio::main]
 async fn main() {
